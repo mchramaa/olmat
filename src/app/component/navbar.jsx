@@ -3,7 +3,7 @@
 import { useState } from "react";
 import React from "react";
 
-function Navbar() {
+export default function Navbar() {
   const [panelOpen, setPanelOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -124,5 +124,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;
