@@ -19,20 +19,15 @@ const Nav = () => {
 
   return (
     <div className="max-w-screen-sm  fixed grid">
-      <div className="top-0 left-0 h-[65px] w-screen bg-tema1-0 py-3 px-3 md:px-8 flex items-center justify-between z-10 drop-shadow-bawah">
+      <div className="top-0 left-0 h-[65px] w-screen bg-tema1-0 py-3 px-3 md:px-8 lg:px-14 flex items-center justify-between z-10 drop-shadow-bawah">
         <img src="/assets/olmat-logo.png" alt="olmat" className="h-[50px]" />
         <h1 className="font-Adlam text-xl lg:text-3xl text-white px-3 min-w-fit">
           OLMAT UINSA
         </h1>
-        <ul className="navPanel w-full text-white text-lg md:text-sm lg:text-lg gap-5 text-right item-center hidden md:visible md:flex justify-end">
+        <ul className="navPanel w-full text-white text-lg md:text-sm lg:text-lg gap-1 lg:gap-5 text-right item-center hidden md:visible md:flex justify-end">
           {Links.map((link) => (
             <li key={link.name}>
-              <a
-                // className="inline-block hover:underline transition duration-500"
-                href={link.link}
-              >
-                {link.name}
-              </a>
+              <a href={link.link}>{link.name}</a>
             </li>
           ))}
         </ul>
