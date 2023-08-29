@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       dropShadow: {
-        kiri: ["0px 65px 10px"],
+        kiri: ["0px 0px 10px"],
+        bawah: ["0px 1px 4px"],
       },
       colors: {
         tema1: ["#95204D"],
@@ -22,6 +23,7 @@ module.exports = {
       animation: {
         Nav1: "animNav 1.5s ease-in-out infinite",
         Nav2: "animNav2 1.5s ease-in-out infinite",
+        navX1: "bounce",
       },
       keyframes: {
         animNav: {

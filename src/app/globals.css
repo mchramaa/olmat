@@ -2,3 +2,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navPanel a {
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #efefef;
+  text-decoration: none; /* Remove default text decoration */
+  position: relative; /* Create a positioning context for pseudo-element */
+}
+
+.navPanel a:hover {
+  color: #f1c175;
+}
+.navPanel a::after {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position the pseudo-element absolutely */
+  bottom: -1px; /* Adjust the distance of the underline from the text */
+  left: 0; /* Align the underline with the left edge of the text */
+  width: 100%; /* Make the underline span the entire width */
+  height: 2px; /* Set the height of the underline */
+  border-radius: 100%;
+  background-color: #efefef; /* Set the color of the underline */
+  transform: scaleX(0); /* Start with no width (hidden) */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition on hover */
+}
+
+.navPanel a:hover::after {
+  transform: scaleX(1); /* Expand the underline to full width on hover */
+}
