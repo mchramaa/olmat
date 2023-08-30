@@ -22,7 +22,7 @@
   left: 0; /* Align the underline with the left edge of the text */
   width: 100%; /* Make the underline span the entire width */
   height: 2px; /* Set the height of the underline */
-  border-radius: 100%;
+  border-radius: 10%;
   background-color: #efefef; /* Set the color of the underline */
   transform: scaleX(0); /* Start with no width (hidden) */
   transition: transform 0.2s ease-in-out; /* Add a smooth transition on hover */

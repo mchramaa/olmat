@@ -1,29 +1,17 @@
 import Nav from "./component/Nav";
 import React from "react";
-// import { Element } from "react-scroll";
+import Paralax from "./component/Intro";
 
 export default function Home() {
   return (
-    <main className="">
-      <Nav className="z-9" />
-
-      {/* ======IN====== */}
-      <div className=" lg:px-24 pt-[65px] h-screen">
-        <div className="flex">
-          <div>
-            <h1 className="text-7xl font-bold">OLMAT 2023</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              harum laborum voluptatem quisquam quos expedita fugit nulla
-              obcaecati nobis? Qui.
-            </p>
-            <img src="/pending.svg" alt="" />
-          </div>
-        </div>
+    <main>
+      <div className="fixed top-0 z-10">
+        <Nav />
       </div>
-
-      {/* =======CONTENT======== */}
-      <div>
+      <div className="h-screen mt-[65px]">
+        <Paralax />
+      </div>
+      <div className>
         <h1 className="text-justify">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
           tenetur nesciunt delectus dolore voluptates explicabo quidem corporis
@@ -140,7 +128,6 @@ export default function Home() {
           corrupti ad ipsa!
         </h1>
       </div>
-
       {/* ========Foot======== */}
     </main>
   );
