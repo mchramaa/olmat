@@ -69,7 +69,7 @@ export default function paralax() {
             <MouseParallaxChild factorX={0.7} factorY={0.5}>
               <img src="/assets/maskot.png" alt="" />
             </MouseParallaxChild>
-            <div className="bottom-[5%] lg-bottom-[20%] absolute">
+            <div className="bottom-[5%] lg:bottom-[20%] absolute">
               <MouseParallaxChild factorX={0.5} factorY={0.5}>
                 <img src="/assets/paralax/awanFront.png" alt="" />
               </MouseParallaxChild>
