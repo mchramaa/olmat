@@ -1,5 +1,5 @@
 import React from "react";
-// import DownloadButton from "./downloadBtn";
+import DownloadBTN from "./downloadBtn";
 
 export default function event() {
   let event = [
@@ -7,6 +7,12 @@ export default function event() {
     { name: "Seminar Nasional", icon: "/assets/seminar.svg" },
     { name: "Desain Grafis", icon: "/assets/desain.svg" },
   ];
+
+  const blob = new Blob(["/assets/juknis/juknisOlmat.pdf"], {
+    type: "text/plain",
+  });
+  const url = URL.createObjectURL(blob);
+
   return (
     <div className="flex flex-col bg-gradient-to-b from-tema2-0 to-white pt-14">
       <div className="flex items-center justify-center">
@@ -16,7 +22,10 @@ export default function event() {
       </div>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pt-12 px-5">
         {event.map((event) => (
-          <div className="grid p-8 relative place-items-center ">
+          <div
+            className="grid p-8 relative place-items-center "
+            key={event.name}
+          >
             <img
               className=" mb-5 lg:w-[70%]"
               src={event.icon}
@@ -25,7 +34,7 @@ export default function event() {
             <h1 className="left-1/2  text-2xl pt font-Adlam text-tema1-0 text-center bottom-0">
               {event.name}
             </h1>
-            {/* <DownloadButton /> */}
+            <DownloadBTN />
           </div>
         ))}
         <div className="aspect-auto"></div>
