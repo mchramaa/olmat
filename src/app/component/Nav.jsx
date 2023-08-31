@@ -86,7 +86,7 @@ const Nav = () => {
           <hr className="bg-tema3-0 h-1 mt-4" />
           <ul className="w-full mt-5 text-2xl  grid gap-5 text-right text-tema1-0">
             {Links.map((link) => (
-              <li>
+              <li key={link}>
                 <a href={link.link}>{link.name}</a>
               </li>
             ))}

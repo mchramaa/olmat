@@ -11,7 +11,7 @@ const DownloadButton = () => {
     const url = URL.createObjectURL(blob);
 
     const a = document.createElement("a");
-    a.href = "/assets/juknis/juknisOlmat.pdf";
+    a.href = url;
     a.download = "JUKLAK JUKNIS OLMAT 2023.pdf"; // Set the desired filename
     document.body.appendChild(a);
     a.click();

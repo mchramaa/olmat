@@ -1,5 +1,5 @@
 import React from "react";
-import DownloadButton from "./downloadBtn";
+// import DownloadButton from "./downloadBtn";
 
 export default function event() {
   let event = [
@@ -25,7 +25,7 @@ export default function event() {
             <h1 className="left-1/2  text-2xl pt font-Adlam text-tema1-0 text-center bottom-0">
               {event.name}
             </h1>
-            <DownloadButton />
+            {/* <DownloadButton /> */}
           </div>
         ))}
         <div className="aspect-auto"></div>
