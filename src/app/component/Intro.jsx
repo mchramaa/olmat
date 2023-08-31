@@ -8,11 +8,11 @@ import React from "react";
 
 export default function paralax() {
   return (
-    <div className="flex bg-gradient-to-t from-tema2-0 to-white justify-center ">
+    <div className="flex bg-gradient-to-t from-tema2-0 to-white justify-center -mb-60">
       <MouseParallaxContainer
         className="parallax"
         containerStyle={{
-          height: "100vh",
+          height: "95vh",
           width: "100%",
           display: "flex",
         }}
@@ -45,11 +45,11 @@ export default function paralax() {
               2023
             </h2>
 
-            <p className=" lg:text-xl mt-[5%]">
+            <p className=" lg:text-xl mt-[3%]">
               &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Provident&quot;
             </p>
-            <div className="grid place-items-center mt-6 py-2 ">
+            <div className="grid place-items-center my-12 py-2 md:my-7 ">
               <a
                 className="py-2 px-8 bg-tema1-0 rounded-full text-2xl  text-white animate-bounce"
                 href="https://daftar.olmat-uinsa.com/"
@@ -61,15 +61,17 @@ export default function paralax() {
           </div>
 
           <div className="flex flex-col row-span-1 items-center relative lg:px-16 justify-center">
-            <div className="absolute ">
+            <div className="absolute z-0">
               <MouseParallaxChild factorX={0.5} factorY={0.5}>
                 <img src="/assets/paralax/awanBg.png" alt="" />
               </MouseParallaxChild>
             </div>
-            <MouseParallaxChild factorX={0.7} factorY={0.5}>
-              <img src="/assets/maskot.png" alt="" />
-            </MouseParallaxChild>
-            <div className="bottom-[5%] lg:bottom-[20%] absolute">
+            <div className="z-10">
+              <MouseParallaxChild factorX={0.7} factorY={0.5}>
+                <img src="/assets/maskot.png" alt="" />
+              </MouseParallaxChild>
+            </div>
+            <div className="bottom-[5%] lg:bottom-[20%] absolute z-20">
               <MouseParallaxChild factorX={0.5} factorY={0.5}>
                 <img src="/assets/paralax/awanFront.png" alt="" />
               </MouseParallaxChild>
