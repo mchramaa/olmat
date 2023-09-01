@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./component/Nav";
 import Paralax from "./component/Intro";
 import Event from "./component/event";
+import Timeline from "./component/timeline";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       </div>
       <div id="event">
         <Event />
+      </div>
+      <div>
+        <Timeline />
       </div>
       {/* ========Foot======== */}
     </main>
