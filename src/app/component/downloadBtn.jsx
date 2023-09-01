@@ -1,13 +1,13 @@
 import React from "react";
 
-const DownloadBTN = () => {
+const MyComponent = (props) => {
+  const { additionalClass } = props;
+
   return (
-    <div>
-      <a href="/assets/juknis/juknisOlmat.pdf" download={"JUKNIS.pdf"}>
-        Download
-      </a>
+    <div className={`my-class ${additionalClass}`}>
+      {/* Content of your component */}
     </div>
   );
 };
 
-export default DownloadBTN;
+export default MyComponent;

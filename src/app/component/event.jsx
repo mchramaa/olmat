@@ -3,15 +3,35 @@ import DownloadBTN from "./downloadBtn";
 
 export default function event() {
   let event = [
-    { name: "Olimpiade Matematika", icon: "/assets/final-icon.svg" },
-    { name: "Seminar Nasional", icon: "/assets/seminar.svg" },
-    { name: "Desain Grafis", icon: "/assets/desain.svg" },
+    {
+      name: "Olimpiade Matematika",
+      icon: "/assets/final-icon.svg",
+      path: "/assets/juknis/JUKLAK JUKNIS OLMAT UINSA 2023.pdf",
+      grid: "md:col-start-2",
+      buttonName: "Download JUKNIS",
+    },
+    {
+      name: "Seminar Nasional",
+      icon: "/assets/seminar.svg",
+      path: "https://bit.ly/SeminarNasionalOLMAT2023",
+      grid: "md:col-start-1",
+      buttonName: "Daftar Seminar",
+    },
+    {
+      name: "Cipta Baca Puisi",
+      icon: "/assets/puisi.svg",
+      path: "/assets/juknis/JUKLAK JUKNIS LOMBA CIPTA BACA PUISI OLMAT 2023.pdf",
+      grid: "md:col-start-2",
+      buttonName: "Download JUKNIS",
+    },
+    {
+      name: "Desain Grafis",
+      icon: "/assets/desain.svg",
+      path: "/assets/juknis/JUKLAK JUKNIS LOMBA DESAIN GRAFIS OLMAT 2023.pdf",
+      grid: "md:col-start-3",
+      buttonName: "Download JUKNIS",
+    },
   ];
-
-  const blob = new Blob(["/assets/juknis/juknisOlmat.pdf"], {
-    type: "text/plain",
-  });
-  const url = URL.createObjectURL(blob);
 
   return (
     <div className="flex flex-col bg-gradient-to-b from-tema2-0 to-white pt-14">
@@ -20,21 +40,28 @@ export default function event() {
           Event Olmat
         </h1>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pt-12 px-5">
+
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pt-12 px-5 ">
         {event.map((event) => (
           <div
-            className="grid p-8 relative place-items-center "
+            className={`grid p-8 relative place-items-center group ${event.grid}`}
             key={event.name}
           >
             <img
-              className=" mb-5 lg:w-[70%]"
+              className=" mb-5 w-[60%] lg:w-[70%] hover:scale-105 hover:drop-shadow-lg transition-transform divide-neutral-400"
               src={event.icon}
               alt="event olmat"
             />
             <h1 className="left-1/2  text-2xl pt font-Adlam text-tema1-0 text-center bottom-0">
               {event.name}
             </h1>
-            <DownloadBTN />
+            <a
+              className="px-3 py-1 mt-4 rounded-full font-Adlam bg-tema1-0 text-white hover:scale-110 transition-transform duration-500 hover:shadow-lg"
+              href={event.path}
+              target="blank"
+            >
+              {event.buttonName}
+            </a>
           </div>
         ))}
         <div className="aspect-auto"></div>

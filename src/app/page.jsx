@@ -12,7 +12,7 @@ export default function Home() {
       <div className="h-[95vh] mt-[65px]">
         <Paralax />
       </div>
-      <div>
+      <div id="event">
         <Event />
       </div>
       {/* ========Foot======== */}

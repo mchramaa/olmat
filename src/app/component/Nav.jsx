@@ -4,8 +4,8 @@ import React, { useState } from "react";
 
 const Nav = () => {
   let Links = [
-    { name: "Olmat", link: "/" },
-    { name: "Event", link: "/" },
+    { name: "Olmat", link: "" },
+    { name: "Event", link: "#event" },
     { name: "TImeline", link: "/" },
     { name: "Rayon", link: "/" },
     { name: "Alur Pendaftaran", link: "/" },
@@ -85,9 +85,9 @@ const Nav = () => {
           </div>
           <hr className="bg-tema3-0 h-1 mt-4" />
           <ul className="w-full mt-5 text-2xl  grid gap-5 text-right text-tema1-0">
-            {Links.map((link) => (
-              <li key={link}>
-                <a href={link.link}>{link.name}</a>
+            {Links.map((linkPanel) => (
+              <li key={linkPanel.name}>
+                <a href={linkPanel.link}>{linkPanel.name}</a>
               </li>
             ))}
           </ul>

@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  scroll-behavior: smooth;
+  transition: transform 0.5s ease-out;
+}
+
 .navPanel a {
   margin: 0 10px;
   display: inline-block;
