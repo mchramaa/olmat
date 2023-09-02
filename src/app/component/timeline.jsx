@@ -22,7 +22,7 @@ export default function Timeline() {
     },
   ];
   return (
-    <div className="grid grid-cols-5 gap-4 p-20">
+    <div className="grid grid-cols-5 gap-4 p-20 items-center justify-center">
       {timeline.map((time) => (
         <div key={time.name} className={`${time.col}`}>
           <div>
