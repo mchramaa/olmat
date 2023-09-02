@@ -47,7 +47,7 @@ export default function event() {
             key={event.name}
           >
             <img
-              className=" mb-5 w-[60%] lg:w-[70%] hover:scale-105 hover:drop-shadow-lg transition-transform divide-neutral-400"
+              className=" mb-5 w-[60%] lg:w-[40%] hover:scale-105 hover:drop-shadow-lg transition-transform divide-neutral-400"
               src={event.icon}
               alt="event olmat"
             />

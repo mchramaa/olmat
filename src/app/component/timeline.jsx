@@ -6,25 +6,30 @@ export default function Timeline() {
       name: "Penyisihan",
       icon: "/assets/penyi-semi-icon.svg",
       date: "16 September 2023",
+      col: "col-start-1",
     },
     {
       name: "Semifinal",
       icon: "/assets/penyi-semi-icon.svg",
       date: "23 September 2023",
+      col: "col-start-3",
     },
     {
       name: "Final",
       icon: "/assets/penyi-semi-icon.svg",
       date: "07 Oktober 2023",
+      col: "col-start-5",
     },
   ];
   return (
-    <div>
+    <div className="grid grid-cols-5 gap-4 p-20">
       {timeline.map((time) => (
-        <div key={time.name}>
-          <img src={time.icon} alt="" />
-          <h1>{time.name}</h1>
-          <h5>{time.date}</h5>
+        <div key={time.name} className={`${time.col}`}>
+          <div>
+            <img className=" w-full" src={time.icon} alt="" />
+          </div>
+          <h1 className="text-3xl font-Adlam text-tema1-0">{time.name}</h1>
+          <h5 className="text-xl font-bold">{time.date}</h5>
         </div>
       ))}
     </div>
