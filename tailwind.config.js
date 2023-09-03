@@ -17,6 +17,7 @@ module.exports = {
         tema3: ["#F1C175"],
         tema4: ["#f7e1e5"],
         tema5: ["#f2e9ea"],
+        tema6: ["#F9E5C5"],
       },
       fontFamily: {
         Adlam: ["ADLaM Display"],

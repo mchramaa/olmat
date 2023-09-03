@@ -35,7 +35,7 @@ export default function event() {
   return (
     <div className="flex flex-col bg-gradient-to-b from-tema2-0 to-white pt-14">
       <div className="flex items-center justify-center">
-        <h1 className=" w-fit text-center text-tema1-0 text-4xl font-Adlam border-b-tema3-0 border-b-4 hover:scale-110">
+        <h1 className=" w-fit text-center text-tema1-0 text-4xl font-Adlam border-b-tema3-0 border-b-4 hover:scale-110 pointer-events-none">
           Event Olmat
         </h1>
       </div>
@@ -51,7 +51,7 @@ export default function event() {
               src={event.icon}
               alt="event olmat"
             />
-            <h1 className="left-1/2  text-2xl pt font-Adlam text-tema1-0 text-center bottom-0">
+            <h1 className="left-1/2  text-2xl pt font-Adlam text-tema1-0 text-center bottom-0 pointer-events-none">
               {event.name}
             </h1>
             <a

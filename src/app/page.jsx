@@ -17,7 +17,7 @@ export default function Home() {
       <div id="event">
         <Event />
       </div>
-      <div>
+      <div className="mt-28">
         <Rayon />
       </div>
       <div>
