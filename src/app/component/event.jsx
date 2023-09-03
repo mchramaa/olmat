@@ -33,14 +33,14 @@ export default function event() {
   ];
 
   return (
-    <div className="flex flex-col bg-gradient-to-b from-tema2-0 to-white pt-14">
+    <div className="flex flex-col pt-14">
       <div className="flex items-center justify-center">
         <h1 className=" w-fit text-center text-tema1-0 text-4xl font-Adlam border-b-tema3-0 border-b-4 hover:scale-110 pointer-events-none">
           Event Olmat
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pt-12 px-5 ">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pt-7 px-5 ">
         {event.map((event) => (
           <div
             className={`grid p-8 relative place-items-center group ${event.grid}`}

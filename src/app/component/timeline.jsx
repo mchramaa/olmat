@@ -16,7 +16,7 @@ export default function Timeline() {
     },
     {
       name: "Final",
-      icon: "/assets/penyi-semi-icon.svg",
+      icon: "/assets/final-icon.svg",
       date: "07 Oktober 2023",
       col: "md:col-start-5",
     },

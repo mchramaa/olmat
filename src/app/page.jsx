@@ -4,6 +4,7 @@ import Paralax from "./component/Intro";
 import Event from "./component/event";
 import Timeline from "./component/timeline";
 import Rayon from "./component/rayon";
+import Olmat from "./component/olmat";
 
 export default function Home() {
   return (
@@ -14,11 +15,14 @@ export default function Home() {
       <div className="h-[95vh] mt-[65px]">
         <Paralax />
       </div>
-      <div id="event">
-        <Event />
+      <div>
+        <Olmat />
       </div>
       <div className="mt-28">
         <Rayon />
+      </div>
+      <div id="event">
+        <Event />
       </div>
       <div>
         <Timeline />
