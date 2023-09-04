@@ -33,7 +33,7 @@ export default function event() {
   ];
 
   return (
-    <div className="flex flex-col pt-14">
+    <div className="flex flex-col pt-14 ">
       <div className="flex items-center justify-center">
         <h1 className=" w-fit text-center text-tema1-0 text-4xl font-Adlam border-b-tema3-0 border-b-4 hover:scale-110 pointer-events-none">
           Event Olmat

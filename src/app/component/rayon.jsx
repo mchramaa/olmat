@@ -4,12 +4,12 @@ import { TfiLocationPin } from "react-icons/tfi";
 
 function Rayon() {
   let regions = [
-    {
-      region: "Rayon Sidoarjo",
-      nameAll: "Rama",
-      name: "Rama",
-      telp: "6285785597036",
-    },
+    // {
+    //   region: "Rayon Sidoarjo",
+    //   nameAll: "Rama",
+    //   name: "Rama",
+    //   telp: "6285785597036",
+    // },
     {
       region: "Rayon Bandung",
       nameAll: "Nita Putri Amelia",
@@ -129,7 +129,7 @@ function Rayon() {
         </h1>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 md:gap-6 lg:px-20 lg:grid-cols-3 items-center justify-center mt-7  bg-cover">
+      <div className="grid gap-4 md:px-6 md:grid-cols-2 md:gap-6 lg:px-20 lg:grid-cols-3 items-center justify-center mt-7">
         {regions.map((rayon) => (
           <a
             key={rayon.name}

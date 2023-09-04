@@ -29,7 +29,7 @@ export default function Timeline() {
             <img className=" w-full" src={time.icon} alt="" />
           </div>
           <h1 className="text-3xl font-Adlam text-tema1-0">{time.name}</h1>
-          <h5 className="text-xl font-bold">{time.date}</h5>
+          <h5 className="text-lg ">{time.date}</h5>
         </div>
       ))}
     </div>
