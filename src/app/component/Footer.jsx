@@ -29,8 +29,8 @@ export default function Footer() {
   ];
   let contactPerson = [
     { name: "Elena", telp: "6285854949442" },
-    { name: "Elena", telp: "6285854949442" },
-    { name: "Elena", telp: "6285854949442" },
+    { name: "Elena2", telp: "6285854949442" },
+    { name: "Elena3", telp: "6285854949442" },
   ];
 
   return (

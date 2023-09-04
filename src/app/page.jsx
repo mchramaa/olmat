@@ -13,19 +13,19 @@ export default function Home() {
       <div className="fixed top-0 z-40">
         <Nav />
       </div>
-      <div className="h-[95vh] mt-[65px]">
+      <div className="h-[95vh] mt-[65px]" id="home">
         <Paralax />
       </div>
-      <div className="">
+      <div className="" id="olmat">
         <Olmat />
       </div>
-      <div className="mt-4">
+      <div className="mt-4" id="rayon">
         <Rayon />
       </div>
       <div id="event">
         <Event />
       </div>
-      <div>
+      <div id="timeline">
         <Timeline />
       </div>
       <div>

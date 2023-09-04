@@ -4,10 +4,10 @@ import React, { useState } from "react";
 
 const Nav = () => {
   let Links = [
-    { name: "Olmat", link: "" },
+    { name: "Olmat", link: "#olmat" },
+    { name: "Rayon", link: "#rayon" },
     { name: "Event", link: "#event" },
-    { name: "TImeline", link: "/" },
-    { name: "Rayon", link: "/" },
+    { name: "TImeline", link: "#timeline" },
     { name: "Alur Pendaftaran", link: "/" },
   ];
 

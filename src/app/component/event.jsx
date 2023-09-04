@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 export default function event() {
   let event = [
@@ -32,6 +34,35 @@ export default function event() {
     },
   ];
 
+  const [tombolAktif, setTombolAktif] = useState(true);
+
+  const daftarHarga = {
+    priceOlmat: [
+      { name: "SD/MI", biaya: "Rp 40.000" },
+      { name: "SMP/MTs", biaya: "Rp 45.000" },
+      { name: "SMA/MA", biaya: "Rp 50.000" },
+    ],
+    priceSeminar: [
+      { name: "Gelombang 1", biaya: "Rp 10.000" },
+      { name: "Gelombang 2", biaya: "Rp 15.000" },
+      { name: "Gelombang 3", biaya: "Rp 15.000" },
+    ],
+    pricePuisi: [
+      { name: "Gelombang 1", biaya: "Rp 10.000" },
+      { name: "Gelombang 2", biaya: "Rp 15.000" },
+      { name: "Gelombang 3", biaya: "Rp 15.000" },
+    ],
+    priceDesain: [
+      { name: "Gelombang 1", biaya: "Rp 10.000" },
+      { name: "Gelombang 2", biaya: "Rp 15.000" },
+      { name: "Gelombang 3", biaya: "Rp 15.000" },
+    ],
+  };
+
+  const handleTombolClick = (buttonName) => {
+    setTombolAktif(buttonName);
+  };
+
   return (
     <div className="flex flex-col pt-14 ">
       <div className="flex items-center justify-center">
@@ -63,7 +94,31 @@ export default function event() {
             </a>
           </div>
         ))}
-        <div className="aspect-auto"></div>
+      </div>
+      <div className="">
+        <h1>Biaya Pendaftaran</h1>
+        <div>
+          <button onClick={() => handleTombolClick("priceOlmat")}>Olmat</button>
+          <button onClick={() => handleTombolClick("priceSeminar")}>
+            Seminar
+          </button>
+          <button onClick={() => handleTombolClick("pricePuisi")}>Puisi</button>
+          <button onClick={() => handleTombolClick("priceOlmat")}>
+            Desain
+          </button>
+          <div>
+            {setTombolAktif && (
+                <h1>{daftarHarga.priceOlmat[tombolAktif]}</h1>
+              ) && <p></p>}
+          </div>
+
+          {/* {biayaPendaftaran.map((biaya) => (
+              <div key={biaya.name}>
+                <h1>{biaya.name}</h1>
+                <p>{biaya.biaya}</p>
+              </div>
+            ))} */}
+        </div>
       </div>
     </div>
   );
