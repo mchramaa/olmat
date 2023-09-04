@@ -25,11 +25,8 @@ function Olmat() {
             </h1>
           </div>
         </div>
-
         <div className="mt-4 flex pl-4 ">
-          <div className="hover:scale-110">
-            <MapIndo />
-          </div>
+          <MapIndo />
         </div>
       </div>
     </div>
