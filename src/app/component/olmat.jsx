@@ -23,7 +23,7 @@ function Olmat() {
           </h1>
         </div>
         <div>
-          <img src="/assets/map.svg" alt="map rayon olmat" />
+          <img src="/assets/map.svg" alt="rayon olmat" />
         </div>
       </div>
     </div>
