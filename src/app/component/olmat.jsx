@@ -7,25 +7,28 @@ function Olmat() {
       <h1 className=" w-fit text-center text-tema1-0 text-4xl font-Adlam border-b-tema3-0 border-b-4 hover:scale-110 pointer-events-none hidden">
         About Us
       </h1>
-      <div className="grid ">
-        <div className="flex flex-col items-center bg-tema1-0 bg-[url(/assets/olmatText.svg)]">
-          <h1 className=" w-fit text-center my-4 text-white text-4xl font-Adlam hover:scale-110 pointer-events-none">
+      <div className="grid lg:grid-cols-2 left-0">
+        <div className="bg-tema1-0 flex flex-col items-center lg:rounded-r-xl">
+          <h1 className="w-fit text-center my-4 text-white text-4xl font-Adlam hover:scale-110 pointer-events-none">
             About Us
           </h1>
-          <img
-            src="/assets/olmat-logo.png"
-            alt="logo olmat"
-            className="w-[40%]"
-          />
-
-          <h1 className="text-white text-sm my-14 px-7 text-center">
-            OLMAT UINSA merupakan olimpiade matematika tingkat Nasional pada
-            jenjang SD/MI,SMP/MTs,SMA/MA Berbasis Islam dengan sebaran 18 Rayon
-            di seluruh Indonesiaa
-          </h1>
+          <div className="flex flex-col items-center bg-[url(/assets/olmatText.svg)]">
+            <img
+              src="/assets/olmat-logo.png"
+              alt="logo olmat"
+              className="w-[30%]"
+            />
+            <h1 className="text-white text-sm my-7 px-5 text-center">
+              OLMAT UINSA merupakan olimpiade matematika tingkat Nasional pada
+              jenjang SD/MI,SMP/MTs,SMA/MA Berbasis Islam dengan sebaran 18
+              Rayon di seluruh Indonesia
+            </h1>
+          </div>
         </div>
-        <div>
-          <MapIndo />
+        <div className="mt-4 flex pl-4 ">
+          <div className="hover:scale-110">
+            <MapIndo />
+          </div>
         </div>
       </div>
     </div>
