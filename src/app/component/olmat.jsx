@@ -1,4 +1,5 @@
 import React from "react";
+import MapIndo from "./map-indo";
 
 function Olmat() {
   return (
@@ -16,6 +17,7 @@ function Olmat() {
             alt="logo olmat"
             className="w-[40%]"
           />
+
           <h1 className="text-white text-sm my-14 px-7 text-center">
             OLMAT UINSA merupakan olimpiade matematika tingkat Nasional pada
             jenjang SD/MI,SMP/MTs,SMA/MA Berbasis Islam dengan sebaran 18 Rayon
@@ -23,7 +25,7 @@ function Olmat() {
           </h1>
         </div>
         <div>
-          <img src="/assets/map.svg" alt="map rayon olmat" />
+          <MapIndo />
         </div>
       </div>
     </div>
