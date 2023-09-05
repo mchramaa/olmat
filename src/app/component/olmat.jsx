@@ -1,5 +1,5 @@
 import React from "react";
-// import MapIndo from "./map-indo";
+import MapIndo from "./map-indo";
 
 function Olmat() {
   return (
@@ -26,8 +26,8 @@ function Olmat() {
           </div>
         </div>
         <div className="mt-4 flex pl-4 ">
-          {/* <MapIndo /> */}
-          <img src="/assets/map2.svg" alt="" />
+          <MapIndo />
+          {/* <img src="/assets/map2.svg" alt="" /> */}
         </div>
       </div>
     </div>
