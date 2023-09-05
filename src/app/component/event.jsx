@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
 export default function event() {
   let event = [
@@ -34,34 +34,35 @@ export default function event() {
     },
   ];
 
-  const [tombolAktif, setTombolAktif] = useState(true);
-
-  const daftarHarga = {
-    priceOlmat: [
-      { name: "SD/MI", biaya: "Rp 40.000" },
-      { name: "SMP/MTs", biaya: "Rp 45.000" },
-      { name: "SMA/MA", biaya: "Rp 50.000" },
-    ],
-    priceSeminar: [
-      { name: "Gelombang 1", biaya: "Rp 10.000" },
-      { name: "Gelombang 2", biaya: "Rp 15.000" },
-      { name: "Gelombang 3", biaya: "Rp 15.000" },
-    ],
-    pricePuisi: [
-      { name: "Gelombang 1", biaya: "Rp 10.000" },
-      { name: "Gelombang 2", biaya: "Rp 15.000" },
-      { name: "Gelombang 3", biaya: "Rp 15.000" },
-    ],
-    priceDesain: [
-      { name: "Gelombang 1", biaya: "Rp 10.000" },
-      { name: "Gelombang 2", biaya: "Rp 15.000" },
-      { name: "Gelombang 3", biaya: "Rp 15.000" },
-    ],
-  };
-
-  const handleTombolClick = (buttonName) => {
-    setTombolAktif(buttonName);
-  };
+  let price = [
+    {
+      acara: "Olmat",
+      name1: "SD/MI",
+      name2: "SMP/MTs",
+      name3: "SMA/MA",
+      harga1: "Rp. 40.000",
+      harga2: "Rp. 45.000",
+      harga3: "Rp. 50.000",
+    },
+    {
+      acara: "Seminar",
+      name1: "Wave-1",
+      name2: "Wave-2",
+      name3: "Wave-3",
+      harga1: "Rp. 40.000",
+      harga2: "Rp. 45.000",
+      harga3: "Rp. 50.000",
+    },
+    {
+      acara: "Desain & Puisi",
+      name1: "Wave-1",
+      name2: "Wave-2",
+      name3: "Wave-3",
+      harga1: "Rp. 40.000",
+      harga2: "Rp. 45.000",
+      harga3: "Rp. 50.000",
+    },
+  ];
 
   return (
     <div className="flex flex-col pt-14 ">
@@ -70,7 +71,6 @@ export default function event() {
           Event Olmat
         </h1>
       </div>
-
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pt-7 px-5 ">
         {event.map((event) => (
           <div
@@ -95,29 +95,37 @@ export default function event() {
           </div>
         ))}
       </div>
-      <div className="">
-        <h1>Biaya Pendaftaran</h1>
-        <div>
-          <button onClick={() => handleTombolClick("priceOlmat")}>Olmat</button>
-          <button onClick={() => handleTombolClick("priceSeminar")}>
-            Seminar
-          </button>
-          <button onClick={() => handleTombolClick("pricePuisi")}>Puisi</button>
-          <button onClick={() => handleTombolClick("priceOlmat")}>
-            Desain
-          </button>
-          <div>
-            {setTombolAktif && (
-                <h1>{daftarHarga.priceOlmat[tombolAktif]}</h1>
-              ) && <p></p>}
-          </div>
-
-          {/* {biayaPendaftaran.map((biaya) => (
-              <div key={biaya.name}>
-                <h1>{biaya.name}</h1>
-                <p>{biaya.biaya}</p>
+      <div className="flex flex-col justify-center items-center pt-5">
+        <h1 className=" w-fit text-center text-tema1-0 text-xl font-Adlam border-b-tema3-0 border-b-4 hover:scale-110 pointer-events-none">
+          Biaya Pendaftaran
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-6 gap-7  ">
+          {price.map((harga) => (
+            <div
+              key={harga.acara}
+              className="bg-gradient-to-t from-tema3-0 to-white rounded-xl drop-shadow-lg hover:scale-110 transition"
+            >
+              <div className="bg-tema1-0 px-12 py-2 rounded-t-xl">
+                <h1 className="text-xl font-bold text-white text-center">
+                  {harga.acara}
+                </h1>
               </div>
-            ))} */}
+              <div className="flex flex-col px-7 py-4">
+                <div className="flex flex-nowrap justify-between">
+                  <h1>{harga.name1}</h1>
+                  <p className="pl-2">{harga.harga1}</p>
+                </div>
+                <div className="flex justify-between">
+                  <h1>{harga.name2}</h1>
+                  <p className="pl-2">{harga.harga2}</p>
+                </div>
+                <div className="flex justify-between">
+                  <h1>{harga.name3}</h1>
+                  <p className="pl-2">{harga.harga3}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

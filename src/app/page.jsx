@@ -22,13 +22,15 @@ export default function Home() {
       <div className="mt-4" id="rayon">
         <Rayon />
       </div>
-      <div id="event">
-        <Event />
+      <div className="bg-gradient-to-t from-tema2-0 to-white">
+        <div id="event">
+          <Event />
+        </div>
+        <div id="timeline" className="mt-10 pb-8">
+          <Timeline />
+        </div>
       </div>
-      <div id="timeline">
-        <Timeline />
-      </div>
-      <div>
+      <div className="">
         <Footer />
       </div>
     </main>

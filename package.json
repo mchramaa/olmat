@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "@mui/material": "^5.14.8",
+    "@mui/styled-engine-sc": "^5.14.8",
     "autoprefixer": "10.4.15",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
@@ -21,7 +25,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-parallax-mouse": "^2.0.1",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
