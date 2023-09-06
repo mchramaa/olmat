@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   transition: transform 0.5s ease-out;
 }
 
