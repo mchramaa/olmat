@@ -47,11 +47,11 @@ export default function event() {
     {
       acara: "Seminar",
       name1: "Wave-1",
-      name2: "Wave-2",
-      name3: "Wave-3",
+      name2: "",
+      name3: "",
       harga1: "Rp. 40.000",
-      harga2: "Rp. 45.000",
-      harga3: "Rp. 50.000",
+      harga2: "",
+      harga3: "",
     },
     {
       acara: "Desain & Puisi",

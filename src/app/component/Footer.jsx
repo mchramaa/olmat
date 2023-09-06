@@ -37,7 +37,7 @@ export default function Footer() {
   return (
     <div>
       <div className="bg-tema1-0 p-3 bg-[url(/assets/olmatText.svg)] ">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center md:justify-center">
           <img
             src="/assets/olmat-logo.png"
             alt="maskot olmat"
@@ -47,7 +47,7 @@ export default function Footer() {
             OLMAT UINSA 2023
           </h1>
         </div>
-        <hr className="mt-2" />
+
         <div className="md:flex md:justify-between">
           <div className="m-5">
             <h1 className="text-white font-Adlam text-xl">Visit Us &#8758;</h1>
