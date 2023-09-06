@@ -103,6 +103,7 @@ export default function Footer() {
           <a
             className="text-[10px] text-white"
             href="https://www.instagram.com/mch.rama__/"
+            target="blank"
           >
             Crafted By @mch.rama__
           </a>
