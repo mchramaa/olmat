@@ -1,5 +1,6 @@
 import React from "react";
-import MapIndo from "./map-indo";
+import MapIndo from "./mapMd";
+import MapSm from "./mapSm";
 
 function Olmat() {
   return (
@@ -25,9 +26,12 @@ function Olmat() {
             </h1>
           </div>
         </div>
-        <div className="mt-4 flex pl-4 ">
+        <div className="mt-4 pl-4 hidden md:flex md:visible">
           <MapIndo />
           {/* <img src="/assets/map2.svg" alt="" /> */}
+        </div>
+        <div className="mt-4 pl-4 md:hidden">
+          <MapSm />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import Footer from "./component/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-white">
       <div className="fixed top-0 z-40">
         <Nav />
       </div>
@@ -26,10 +26,11 @@ export default function Home() {
         <div id="event">
           <Event />
         </div>
-        <div id="timeline" className="mt-10 pb-8">
+        <div id="timeline" className="mt-10 ">
           <Timeline />
         </div>
       </div>
+
       <div className="">
         <Footer />
       </div>

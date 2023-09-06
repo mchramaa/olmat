@@ -127,6 +127,7 @@ export default function event() {
             </div>
           ))}
         </div>
+        <div className="bg-[url(/assets/wave.svg)]"></div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import WaveBackground from "./wave";
 
 export default function Timeline() {
   let timeline = [
@@ -41,6 +42,7 @@ export default function Timeline() {
           </div>
         ))}
       </div>
+      <WaveBackground />
     </div>
   );
 }
