@@ -8,7 +8,7 @@ const Nav = () => {
     { name: "Rayon", link: "#rayon" },
     { name: "Event", link: "#event" },
     { name: "TImeline", link: "#timeline" },
-    { name: "Alur Pendaftaran", link: "/" },
+    { name: "Pusat Bantuan", link: "/pusat-bantuan" },
   ];
 
   const [panelOpen, setPanelOpen] = useState(false);
@@ -22,7 +22,7 @@ const Nav = () => {
       <div className=" top-0 left-0 h-[65px] w-screen bg-tema1-0 py-3 px-3 md:px-8 lg:px-14 flex items-center justify-between z-10 drop-shadow-bawah">
         <a
           className="w-[55px] hover:scale-110 transform tranform-transition duration-200"
-          href=""
+          href="/"
         >
           <img src="/assets/olmat-logo.png" alt="olmat" className="" />
         </a>
@@ -102,7 +102,7 @@ const Nav = () => {
           © Copyright by OLMAT 2023
           <br />
           <a
-            href="https://www.instagram.com/mch.rama__/"
+            href="https://instagram.com/mch.rama__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
             target="blank"
             className=" text-[10px] font-extralight"
           >

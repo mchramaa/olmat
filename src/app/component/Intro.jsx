@@ -20,22 +20,6 @@ export default function paralax() {
         globalFactorY={0.2}
         resetOnLeave
       >
-        {/* <MouseParallaxChild
-          factorX={0.9}
-          factorY={0.1}
-          style={{
-            background: "url(/assets/paralax/awanBg.png)",
-            backgroundPositionY: "50%",
-            transform: "scale(1.2)",
-            position: "absolute",
-            filter: "blur(4px) brightness(50%)",
-            backgroundSize: "auto",
-            backgroundRepeat: "repeat",
-            width: "100%",
-            height: "100%",
-            backfaceVisibility: "hidden",
-          }}
-        /> */}
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-0 md:flex-row px-4 md:px-14 sm:px-6">
           <div className="flex flex-col row-start-2 lg:row-start-auto justify-center lg:justify-center lg:pr-11">
             <h1 className="text-5xl md:text-8xl lg:text-7xl font-bold font-Adlam text-tema1-0">

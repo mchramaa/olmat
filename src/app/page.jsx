@@ -42,7 +42,6 @@ export default function Home() {
             backfaceVisibility: "hidden",
           }}
         />
-
         <div className="fixed top-0 z-40">
           <Nav />
         </div>
@@ -62,12 +61,11 @@ export default function Home() {
           <div id="timeline" className="mt-10 ">
             <Timeline />
           </div>
-        </div>
-
-        <div className="">
-          <Footer />
-        </div>
+        </div>{" "}
       </MouseParallaxContainer>
+      <div className="">
+        <Footer />
+      </div>
     </main>
   );
 }
