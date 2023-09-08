@@ -41,7 +41,7 @@ export default function Home() {
         <div className="fixed top-0 z-40">
           <Nav />
         </div>
-        <div>
+        <div className="mt-[65px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo
           tenetur velit delectus. Nulla illum facere veniam nam, consectetur
           error exercitationem rerum repellendus eos voluptatum quia, nihil
@@ -167,9 +167,9 @@ export default function Home() {
           iusto, animi sint corrupti veniam iste odio exercitationem sequi nemo.
           Ad, totam?
         </div>
+        <WaveBackground />
       </MouseParallaxContainer>
       <div className="">
-        <WaveBackground />
         <Footer />
       </div>
     </main>

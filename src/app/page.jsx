@@ -25,13 +25,15 @@ export default function Home() {
         globalFactorY={0.2}
         resetOnLeave
       >
+        <div className="fixed top-0 z-40">
+          <Nav />
+        </div>
         <MouseParallaxChild
           factorX={0.9}
           factorY={0.1}
           style={{
             background: "url(/assets/paralax/awanPink.png)",
             backgroundPositionY: "50%",
-            transform: "scale(1.2)",
             position: "absolute",
             filter: "blur(4px) brightness(100%)",
             opacity: "60%",
@@ -42,16 +44,13 @@ export default function Home() {
             backfaceVisibility: "hidden",
           }}
         />
-        <div className="fixed top-0 z-40">
-          <Nav />
-        </div>
         <div className="h-[95vh] mt-[65px]" id="home">
           <Paralax />
         </div>
         <div className="" id="olmat">
           <Olmat />
         </div>
-        <div className="mt-4" id="rayon">
+        <div className="pt-16" id="rayon">
           <Rayon />
         </div>
         <div className="bg-gradient-to-t from-tema2-0 to-white">
@@ -61,7 +60,7 @@ export default function Home() {
           <div id="timeline" className="mt-10 ">
             <Timeline />
           </div>
-        </div>{" "}
+        </div>
       </MouseParallaxContainer>
       <div className="">
         <Footer />
