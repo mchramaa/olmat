@@ -4,6 +4,7 @@ import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import WaveBackground from "./wave";
+import Image from "next/image";
 
 export default function Footer() {
   let contatcIcon = [
@@ -28,23 +29,21 @@ export default function Footer() {
       href: "https://www.youtube.com/@olimpiadematematikauinsa7027",
     },
   ];
-  let contactPerson = [
-    { name: "Elena", telp: "6285854949442" },
-    { name: "Elena2", telp: "6285854949442" },
-    { name: "Elena3", telp: "6285854949442" },
-  ];
+  let contactPerson = [{ name: "Elena", telp: "6285854949442" }];
 
   return (
     <div>
       <div className="bg-tema1-0 p-3 bg-[url(/assets/olmatText.svg)] ">
         <div className="flex items-center md:justify-center">
-          <img
+          <Image
+            width={100}
+            height={100}
             src="/assets/olmat-logo.png"
             alt="maskot olmat"
             className="w-9"
           />
           <h1 className="font-Adlam text-2xl text-white pl-3">
-            OLMAT UINSA 2023
+            OLMAT UINSA 2024
           </h1>
         </div>
 
@@ -56,8 +55,7 @@ export default function Footer() {
                 <div key={contact.name}>
                   <a
                     className="block bg-tema2-0 rounded-full p-2 m-2 transition hover:bg-white hover:scale-125 hover:text-tema1-0 hover:drop-shadow-2xl"
-                    href={contact.href}
-                  >
+                    href={contact.href}>
                     {contact.icon}
                   </a>
                 </div>
@@ -69,8 +67,7 @@ export default function Footer() {
             <a
               href="https://goo.gl/maps/bheSpaYQuVWnAmfH8"
               target="blank"
-              className="text-white text-sm "
-            >
+              className="text-white text-sm ">
               <div className="transition hover:scale-110 duration-500 px-4 py-2 rounded-full">
                 Gedung E1, Fakultas Tarbiyah dan Keguruan,
                 <br /> Universitas Islam Negeri Sunan Ampel, Surabaya, Jawa
@@ -87,8 +84,7 @@ export default function Footer() {
                 className="flex items-center gap-3 text-tema1-0 mt-4 py-1 px-3 rounded-full bg-tema2-0"
                 key={cp.name}
                 href={`https://api.whatsapp.com/send/?phone=${cp.telp}&text=Hai+kak+${cp.name}%2C+saya+mau+bertanya&type=phone_number&app_absent=0`}
-                target="blank"
-              >
+                target="blank">
                 <BsWhatsapp />
                 {cp.name}
               </a>
@@ -98,13 +94,12 @@ export default function Footer() {
         <hr />
         <div className="flex flex-col items-center mt-2">
           <h1 className="text-base text-white text-center">
-            © Copyright OLMAT UINSA 2023. All rights reserved
+            © Copyright OLMAT UINSA 2024. All rights reserved
           </h1>
           <a
             className="text-[10px] text-white"
             href="https://www.instagram.com/mch.rama__/"
-            target="blank"
-          >
+            target="blank">
             Crafted By @mch.rama__
           </a>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import WaveBackground from "./wave";
+import Image from "next/image";
 
 export default function Timeline() {
   let timeline = [
@@ -33,7 +34,7 @@ export default function Timeline() {
         {timeline.map((time) => (
           <div key={time.name} className="flex items-center justify-center">
             <div className="flex justify-center">
-              <img className="w-[100px]" src={time.icon} alt="" />
+              <Image width={100} height={100} src={time.icon} alt="" />
             </div>
             <div className="flex flex-col pl-3 ">
               <h1 className="text-3xl font-Adlam text-tema1-0">{time.name}</h1>

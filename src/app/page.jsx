@@ -12,6 +12,8 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
+import ComingSoon from "./component/ComingSoon";
+import WaveBackground from "./component/wave";
 
 export default function Home() {
   return (
@@ -23,8 +25,7 @@ export default function Home() {
         }}
         globalFactorX={0.2}
         globalFactorY={0.2}
-        resetOnLeave
-      >
+        resetOnLeave>
         <div className="fixed top-0 z-40">
           <Nav />
         </div>
@@ -44,27 +45,34 @@ export default function Home() {
             backfaceVisibility: "hidden",
           }}
         />
-        <div className="h-[95vh] mt-[65px]" id="home">
-          <Paralax />
-        </div>
-        <div className="" id="olmat">
-          <Olmat />
-        </div>
-        <div className="pt-16" id="rayon">
-          <Rayon />
-        </div>
-        <div className="bg-gradient-to-t from-tema2-0 to-white">
-          <div id="event">
-            <Event />
+        {/* <div>
+          <div className="h-[95vh] mt-[65px]" id="home">
+            <Paralax />
           </div>
-          <div id="timeline" className="mt-10 ">
-            <Timeline />
+          <div className="" id="olmat">
+            <Olmat />
           </div>
+          <div className="pt-16" id="rayon">
+            <Rayon />
+          </div>
+          <div className="bg-gradient-to-t from-tema2-0 to-white">
+            <div id="event">
+              <Event />
+            </div>
+            <div id="timeline" className="mt-10 ">
+              <Timeline />
+            </div>
+          </div>
+        </div> */}
+        <div className=" bg-gradient-to-t from-tema2-0 to-white">
+          <div className="h-screen">
+            <ComingSoon />
+          </div>
+          <WaveBackground />
+          <Footer />
         </div>
       </MouseParallaxContainer>
-      <div className="">
-        <Footer />
-      </div>
+      <div className=""></div>
     </main>
   );
 }

@@ -4,12 +4,6 @@ import { TfiLocationPin } from "react-icons/tfi";
 
 function Rayon() {
   let regions = [
-    // {
-    //   region: "Rayon Sidoarjo",
-    //   nameAll: "Rama",
-    //   name: "Rama",
-    //   telp: "6285785597036",
-    // },
     {
       region: "Rayon Bandung",
       nameAll: "Nita Putri Amelia",
@@ -135,8 +129,7 @@ function Rayon() {
             key={rayon.name}
             className="flex items-center justify-between bg-white drop-shadow-md rounded-full px-3 transition hover:scale-105 hover:bg-tema4-0  "
             href={`https://api.whatsapp.com/send/?phone=${rayon.telp}&text=Hai+kak+${rayon.name}%2C+saya+dari+${rayon.region}&type=phone_number&app_absent=0`}
-            target="blank"
-          >
+            target="blank">
             <TfiLocationPin size={"25px"} color="#95204D" />
 
             <div className="mx-4 lg:mx-0">

@@ -1,6 +1,7 @@
 import React from "react";
-import MapIndo from "./mapMd";
-import MapSm from "./mapSm";
+import MapIndo from "../Icon/mapMd";
+import MapSm from "../Icon/mapSm";
+import Image from "next/image";
 
 function Olmat() {
   return (
@@ -11,10 +12,11 @@ function Olmat() {
             About Us
           </h1>
           <div className="flex flex-col items-center bg-[url(/assets/olmatText.svg)]">
-            <img
+            <Image
+              width={270}
+              height={100}
               src="/assets/olmat-logo.png"
               alt="logo olmat"
-              className="w-[30%]"
             />
             <h1 className="text-white text-sm my-7 px-5 text-center">
               OLMAT UINSA merupakan olimpiade matematika tingkat Nasional pada

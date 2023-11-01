@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 export default function event() {
@@ -75,9 +76,10 @@ export default function event() {
         {event.map((event) => (
           <div
             className={`grid p-8 relative place-items-center group ${event.grid}`}
-            key={event.name}
-          >
-            <img
+            key={event.name}>
+            <Image
+              width={100}
+              height={100}
               className=" mb-5 w-[60%] lg:w-[40%] hover:scale-105 hover:drop-shadow-lg transition-transform divide-neutral-400"
               src={event.icon}
               alt="event olmat"
@@ -88,8 +90,7 @@ export default function event() {
             <a
               className="px-3 py-1 mt-4 rounded-full font-Adlam bg-tema1-0 text-white hover:scale-110 transition-transform duration-500 hover:shadow-lg"
               href={event.path}
-              target="blank"
-            >
+              target="blank">
               {event.buttonName}
             </a>
           </div>
@@ -103,8 +104,7 @@ export default function event() {
           {price.map((harga) => (
             <div
               key={harga.acara}
-              className="bg-gradient-to-t from-tema3-0 to-white rounded-xl drop-shadow-lg hover:scale-110 transition"
-            >
+              className="bg-gradient-to-t from-tema3-0 to-white rounded-xl drop-shadow-lg hover:scale-110 transition">
               <div className="bg-tema1-0 px-12 py-2 rounded-t-xl">
                 <h1 className="text-xl font-bold text-white text-center">
                   {harga.acara}
