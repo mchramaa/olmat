@@ -25,7 +25,8 @@ export default function Home() {
         }}
         globalFactorX={0.2}
         globalFactorY={0.2}
-        resetOnLeave>
+        resetOnLeave
+      >
         <div className="fixed top-0 z-40">
           <Nav />
         </div>
@@ -45,7 +46,7 @@ export default function Home() {
             backfaceVisibility: "hidden",
           }}
         />
-        {/* <div>
+        <div className=" bg-gradient-to-t from-tema2-0 to-white">
           <div className="h-[95vh] mt-[65px]" id="home">
             <Paralax />
           </div>
@@ -63,13 +64,13 @@ export default function Home() {
               <Timeline />
             </div>
           </div>
-        </div> */}
-        <div className=" bg-gradient-to-t from-tema2-0 to-white">
-          <div className="h-screen">
+          <div>
+            {/* <div className="h-screen">
             <ComingSoon />
+          </div> */}
+            <WaveBackground />
+            <Footer />
           </div>
-          <WaveBackground />
-          <Footer />
         </div>
       </MouseParallaxContainer>
       <div className=""></div>

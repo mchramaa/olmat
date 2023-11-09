@@ -43,7 +43,6 @@ export default function Timeline() {
           </div>
         ))}
       </div>
-      <WaveBackground />
     </div>
   );
 }
