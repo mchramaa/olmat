@@ -3,10 +3,10 @@ import style from "./css/wave.css";
 
 const WaveBackground = () => {
   return (
-    <div class="ocean">
-      <div class="wave"></div>
-      <div class="wave"></div>
-      <div class="wave"></div>
+    <div className="ocean">
+      <div className="wave"></div>
+      <div className="wave"></div>
+      <div className="wave"></div>
     </div>
   );
 };

@@ -14,7 +14,8 @@ export default function ComingSoon() {
         className="parallax"
         globalFactorX={0.2}
         globalFactorY={0.2}
-        resetOnLeave>
+        resetOnLeave
+      >
         <div className="grid sm:grid-cols-1 pt-20 lg:grid-cols-2 gap-0 md:flex-row px-4 md:px-14 sm:px-6 h-screen">
           <div className="flex flex-col row-start-2 lg:row-start-auto justify-center lg:justify-center lg:pr-11 gap-2">
             <h1 className="text-5xl md:text-8xl lg:text-7xl font-bold font-Adlam text-tema1-0 text-center">
@@ -31,7 +32,8 @@ export default function ComingSoon() {
               <a
                 href="https://www.sibiti.co.id/"
                 target="blank"
-                className="pt-2">
+                className="pt-2"
+              >
                 <Image
                   src="assets/sibiti.svg"
                   alt="sibiti"
